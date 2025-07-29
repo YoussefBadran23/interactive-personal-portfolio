@@ -10,6 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://YoussefBadran23.github.io/interactive-personal-portfolio",
   "dependencies": {
     "@google/genai": "^1.11.0",
     "react": "^19.1.1",
