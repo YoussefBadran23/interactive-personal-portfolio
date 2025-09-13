@@ -15,6 +15,8 @@ import { GithubIcon } from './components/icons/tech/GithubIcon';
 import { SqlIcon } from './components/icons/tech/SqlIcon';
 import { JupyterIcon } from './components/icons/tech/JupyterIcon';
 import { GitIcon } from './components/icons/tech/GitIcon';
+// Import the new C++ icon
+import { CppIcon } from './components/icons/tech/CppIcon';
 
 export interface Experience {
   role: string;
@@ -27,7 +29,7 @@ export interface Project {
   title: string;
   description: string[];
   image: string;
-  link?: string;
+  link?: string; // New property for project links
 }
 
 export interface Skill {
@@ -121,6 +123,7 @@ export const skills: SkillCategory[] = [
       title: "Languages & Libraries",
       skills: [
           { name: "Python", icon: PythonIcon },
+          { name: "C++", icon: CppIcon }, // Added new C++ skill with icon
           { name: "Scikit-learn", icon: ScikitLearnIcon },
           { name: "Keras", icon: KerasIcon },
           { name: "Pandas", icon: PandasIcon },
