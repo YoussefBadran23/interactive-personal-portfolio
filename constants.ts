@@ -15,7 +15,6 @@ import { GithubIcon } from './components/icons/tech/GithubIcon';
 import { SqlIcon } from './components/icons/tech/SqlIcon';
 import { JupyterIcon } from './components/icons/tech/JupyterIcon';
 import { GitIcon } from './components/icons/tech/GitIcon';
-// Import the new C++ icon
 import { CppIcon } from './components/icons/tech/CppIcon';
 
 export interface Experience {
@@ -29,7 +28,7 @@ export interface Project {
   title: string;
   description: string[];
   image: string;
-  link?: string; // New property for project links
+  link?: string;
 }
 
 export interface Skill {
@@ -86,7 +85,7 @@ export const projects: Project[] = [
       "Developed a high-performance CSV processor for data loading and preprocessing.",
       "Implemented the K-Means clustering algorithm to analyze the Iris dataset, showcasing low-level programming and algorithm skills."
     ],
-    image: "DataSciencePipeline.jpg",
+    image: "DataSciencePipeline.png", // The updated image path
     link: "https://github.com/YoussefBadran23/DataSciencePipeline"
   },
   {
@@ -123,7 +122,7 @@ export const skills: SkillCategory[] = [
       title: "Languages & Libraries",
       skills: [
           { name: "Python", icon: PythonIcon },
-          { name: "C++", icon: CppIcon }, // Added new C++ skill with icon
+          { name: "C++", icon: CppIcon },
           { name: "Scikit-learn", icon: ScikitLearnIcon },
           { name: "Keras", icon: KerasIcon },
           { name: "Pandas", icon: PandasIcon },
