@@ -27,7 +27,7 @@ export interface Project {
   title: string;
   description: string[];
   image: string;
-  link?: string; // Added link property for projects
+  link?: string;
 }
 
 export interface Skill {
@@ -84,7 +84,7 @@ export const projects: Project[] = [
       "Developed a high-performance CSV processor for data loading and preprocessing.",
       "Implemented the K-Means clustering algorithm to analyze the Iris dataset, showcasing low-level programming and algorithm skills."
     ],
-    image: "DataSciencePipeline.jpg", // Placeholder image path
+    image: "DataSciencePipeline.jpg",
     link: "https://github.com/YoussefBadran23/DataSciencePipeline"
   },
   {
