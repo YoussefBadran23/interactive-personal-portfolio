@@ -4,9 +4,9 @@ import { defineConfig, loadEnv } from 'vite';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      define: {
-        // Gemini API key removed
-      },
+      // Relative base so the production build works on any path,
+      // including the GitHub Pages project subpath.
+      base: './',
       resolve: {
         alias: {
           '@': path.resolve(__dirname, '.'),
